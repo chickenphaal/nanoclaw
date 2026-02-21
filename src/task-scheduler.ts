@@ -121,6 +121,7 @@ async function runTask(
           // Only reset idle timer on actual results, not session-update markers
           resetIdleTimer();
         }
+
         if (streamedOutput.status === 'error') {
           error = streamedOutput.error || 'Unknown error';
         }
